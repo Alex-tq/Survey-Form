@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Survey Form</title>
+</head>
+<body>
+	<!--Top banner-->
+	<div id="banner">
+	<h1 id="title">Survey Form</h1>
+	<!--Container-->
+	<div id="container">
+	  <p id="description">
+	    What works for you when learning how to code?
+	  </p>
+	  <!--The form starts here-->
+	  <form id="survey-form">
+	    <!--Name-->
+	    <div class="rows">
+	      <div class="labels">
+	        <label for="name" id="name-label">
+	          *Name: 
+	        </label>
+	      </div>
+	      <div class="input">
+	        <input type="text" placeholder="Enter your name"id="name" class="text-input" required>
+	      </div> 
+	    </div>
+	    <!--Email-->
+	    <div class="rows">
+	      <div class="labels">
+	        <label for="email" id="email-label">
+	          *Email: 
+	        </label>
+	      </div>
+	      <div class="input">
+	        <input type="email" placeholder="Enter your email"id="email" class="text-input" required>
+	      </div> 
+	    </div>
+	    <!--Age-->
+	    <div class="rows">
+	    <div class="labels">
+	        <label for="number" id="number-label">
+	          *Age: 
+	        </label>
+	      </div>
+	      <div class="input">
+	        <input type="number" placeholder="Enter your Age" min="1" max="100"id="number" class="text-input" required>
+	      </div> 
+	    </div>
+	    <!--drop down menu-->
+	    <div class="rows">
+	      <div class="labels">
+	        <label for="dropdown">How many hours a week are you dedicating to learning how to code?</label>
+	      </div>
+	      <div class="input">
+	        <select id="dropdown">
+	          <option value="choose one">--Choose one--</option>
+	          <option value="Up to 5 hours">Up to 5 hours</option>
+	          <option value="5 to 10 hours">5 to 10 hours</option>
+	          <option value="10 to 15 hours">10 to 15 hours</option>
+	          <option value="15 to 20 hours">15 to 20 hours</option>
+	          <option value="20 to 25 hours">20 to 25 hours</option>
+	          <option value="25 to 30 hours">25 to 30 hours</option>
+	          <option value="Over 30 hours">Over 30 hours</option>
+	        </select>
+	      </div>
+	    </div>
+	    <!--Radio buttons-->
+	    <div class="rows">
+	      <div class="labels" id="radio-label">
+	        <label>
+	        What kind of position are you hopping to find?
+	        <label>
+	      </div>
+	      <div class="input">
+	        <input type="radio" name="positions" value="Front end developer" id="front-end"><label for="front-end">Front end developer</label><br>
+	        <input type="radio" name="positions" value="Back end developer" id="back-end"><label for="back-end">Back end developer</label><br>
+	        <input type="radio" name="positions" value="Full stack developer" id="full-stack"><label for="full-stack">Full stack developer</label>
+	      </div>
+	    </div>    
+	    <!--Checkboxes-->
+	    <div class="rows">
+	      <div class="labels" id="checkboxes-label">
+	        <label>
+	        What methods are you using to learn?
+	        <label>
+	      </div>
+	      <div class="input">
+	        <input type="checkbox" name="learning-methods" value="College/University" id="college"><label for="college">College/University</label><br>
+	        <input type="checkbox" name="learning-methods" value="Coding bootcamp" id="coding-bootcamp"><label for="coding-bootcamp">Coding bootcamp</label><br>
+	        <input type="checkbox" name="learning-methods" value="Freecodecamp" id="freecodecamp"><label for="freecodecamp">Freecodecamp</label><br>
+	        <input type="checkbox" name="learning-methods" value="Treehouse" id="treehouse"><label for="treehouse">Treehouse</label><br>
+	        <input type="checkbox" name="learning-methods" value="Udemy" id="udemy"><label for="udemy">Udemy</label><br>
+	        <input type="checkbox" name="learning-methods" value="Youtube Tutorials" id="youtube-tutorials"><label for="youtube-tutorials">Youtube Tutorials</label><br>
+	        <input type="checkbox" name="learning-methods" value="Books" id="books"><label for="books">Books</label>
+	      </div>
+	    </div>
+	    <!--Text Area-->
+	    <div class="rows">
+	      <div class="labels" id="textarea-label">
+	        <label for="text-area">Is there any other source you use to learn?</label>
+	      </div>
+	      <div class="input">
+	        <textarea id="text-area" placeholder="Write here"></textarea>
+	      </div>
+	    </div>
+	    <div class="rows" id="submit-button">
+	      <button type"submit" id="submit">Submit</button>
+	    </div>   
+	  </form>
+	</div>
+	</body>
+</html>
